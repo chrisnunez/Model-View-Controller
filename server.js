@@ -22,12 +22,12 @@ const sess = {
 };
 
 // Middleware allows us to have access to req.sesions
-app.use(sessions(sess));
+app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.json());
-app.use(express.urlenconded({extended: true}));
+app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // turn on routes
