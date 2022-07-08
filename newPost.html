@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Tech Blog</a>
@@ -25,17 +24,29 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./login.html">Login</a>
               </li>
-              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./">Logout</a>
+              </li>
             </ul>
           </div>
       </nav>
     </div>
-    <!-- Navbar End -->
 
-<!-- New Post Button -->
-    <div class="container text-center fixed-bottom mb-5">
-       <a href="./newPost.html"> <button type="button" class="btn btn-dark" class="newPost">New Post +</button> </a>
+<!-- Form Title and Comments -->
+    <div class="container mt-5" id="testForm">
+      <form>
+        <div class="form-outline">
+          <label class="form-label" for="form12">Title</label>
+          <input type="text" id="form12" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <a href="./allPosts.html"><button type="button" class="btn btn-primary mt-3">Submit</button> </a>
+      </form>
     </div>
+
 
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
