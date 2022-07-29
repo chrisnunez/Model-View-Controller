@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // turn on routes
 app.use(routes);
 
-// turno n connection to db and server
+// turno on connection to db and server
 const init = async () => {
   try {
     await sequelize.query("SET FOREIGN_KEY_CHECKS = 0");

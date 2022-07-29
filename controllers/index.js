@@ -8,7 +8,7 @@ router.use('/api', apiRoutes);
 router.use('*', async(req, res) => {
   res.status(500).json({
     success: false,
-    message: 'endpoing does not exist!'
+    message: 'endpoint does not exist!'
   })
 })
 
